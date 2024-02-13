@@ -26,7 +26,8 @@ function displayResults(results)
 }
 
 function selectSuggestion(selectedSuggestion){
-  document.getElementById('search').value
+  document.getElementById('search').value = selectedSuggestion;
+  document.getElementById("searchResults").innerHTML = '';
 }
 
 function debouncedSearch(event){
@@ -39,5 +40,5 @@ function debouncedSearch(event){
     } else{
       document.getElementById("searchResults").innerHTML='';
     }
-  },1500);
+  },1000);
 }
