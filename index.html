@@ -45,8 +45,13 @@
                 <input
                   type="text"
                   placeholder="Search for Products, Brands and More"
+                  id="search" 
+                  oninput="debouncedSearch(event)"
                 />
               </div>
+                <ul id="searchResults"></ul>
+                <script src="assets/searchbox.js"></script>
+              
               <div class="dropdown nav">
                 <button class="dropbtn">
                   <img
@@ -218,7 +223,7 @@
                 src="https://www.themessycorner.in/cdn/shop/products/DG4_1300x.jpg?v=1680936553"
               />
             </div>
-            <div class="card__face card__face--back"></div>
+            <div class="card__face--back">hiiii</div>
           </div>
           <div class="card">
             <div class="card__face card__face--front">

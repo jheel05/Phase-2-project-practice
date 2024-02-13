@@ -229,7 +229,7 @@
     cursor: pointer;
     transition: 1s ease-in-out;
     transform-style: preserve-3d;
-    background-color: #3c3939;
+    background-color: #627fc9a9;
   }
   
   .scene .card:hover {
@@ -252,12 +252,15 @@
     -o-object-fit: cover;
     object-fit: cover;
   }
-  
-  .scene .card .card__face--back {
-    background-color: black;
+  .card__face--back{
+    display: none;
   }
+  
   .card:hover .card__face--front {
     transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
   }
   
   .card:hover .card__face--back {
