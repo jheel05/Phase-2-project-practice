@@ -39,5 +39,5 @@ function debouncedSearch(event){
     } else{
       document.getElementById("searchResults").innerHTML='';
     }
-  },500);
+  },1500);
 }
