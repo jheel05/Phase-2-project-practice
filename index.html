@@ -14,7 +14,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
   </head>
 
   <body>
@@ -29,15 +28,15 @@
                 alt="Flipkart Logo"
               />
               <div class="nav">
-              <div class="search nav-title">
-                <i class="fa fa-search"></i>
-                <input
-                  type="text"
-                  placeholder="Search for Products, Brands and More"
-                  id="search" 
-                  oninput="debouncedSearch(event)"
-                />
-              </div>
+                <div class="search nav-title">
+                  <i class="fa fa-search"></i>
+                  <input
+                    type="text"
+                    placeholder="Search for Products, Brands and More"
+                    id="search"
+                    oninput="debouncedSearch(event)"
+                  />
+                </div>
                 <ul id="searchResults"></ul>
                 <script src="assets/searchbox.js"></script>
               </div>
@@ -113,13 +112,29 @@
                 />
                 <span>Cart</span>
               </div>
-              <div class="Seller nav">
-                <img
-                  src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
-                  alt="Store"
-                />
-                <span>Become a Seller</span>
+              
+              <button onclick="openModal()" class="Seller nav">
+                  <img
+                    src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
+                    alt="Store"
+                  />
+                  <span>Become a Seller</span>
+                
+              </button>
+              <div class="modal-background" id="modalBackground"></div>
+
+              <div class="modal" id="myModal">
+                <div class="modal-content">
+                  <span class="close-btn" onclick="closeModal()">&times;</span>
+                  <h2>Sell Online with Flipkart</h2>
+                  <p>Learn more about "Become a Seller":</p>
+                  <p>
+                    The "Become a Seller" feature on Flipkart provides an avenue for businesses to effortlessly join the bustling e-commerce platform. With just a few clicks, sellers can register their products and gain access to millions of potential customers across India. Flipkart's user-friendly interface simplifies the selling process, allowing merchants to showcase their offerings and manage their inventory with ease. From local artisans to established brands, the "Become a Seller" option democratizes commerce, enabling entrepreneurs of all scales to harness the power of online retail and expand their market reach exponentially.
+                  </p>
+                </div>
               </div>
+              <script src="assets/modalbox.js"></script>
+
               <div class="drop-down nav">
                 <div class="drop-down1" aria-hidden="true">
                   <a
