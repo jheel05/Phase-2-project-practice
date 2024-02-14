@@ -1,4 +1,3 @@
-
 const input = document.querySelectorAll(".input");
 const inputField = document.querySelector(".inputfield");
 const submitButton = document.getElementById("submit");
@@ -16,6 +15,13 @@ const updateInputConfig = (element, disabledStatus) => {
 };
 
 input.forEach((element) => {
+  element.addEventListener("keydown", (e) => {
+    // Prevent typing anything other than numbers
+    if (!/[0-9]/.test(e.key)) {
+      e.preventDefault();
+    }
+  });
+
   element.addEventListener("keyup", (e) => {
     e.target.value = e.target.value.replace(/[^0-9]/g, "");
     let { value } = e.target;
