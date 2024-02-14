@@ -3,18 +3,15 @@ function debounce(fn,delay){
   clearTimeout(timer);
   timer=setTimeout(fn,delay);
 }
-
 function fetchData(query){
-    return fetch('https://dummyjson.com/products/search?q=' + query)
-    .then(response=>response.json())
-    .catch(error=>console.error("Error fetching data:",error));
+  return fetch(`https://dummyjson.com/products/search?q=${query}`)
+  .then(response=>response.json())
+  .catch(error=>console.error("Error fetching data:",error));
 }
-
-function displayResults(results)
-{
-  const searchElement=document.getElementById("searchResults");
-  searchResults.innerElement='';
-  const req=results.products;
+function displayResults(results) {
+  const searchElement = document.getElementById("searchResults");
+  searchElement.innerHTML = '';
+  const req = results.products;
   console.log(req);
   req.forEach(result => {
     const li = document.createElement('li');
@@ -22,14 +19,11 @@ function displayResults(results)
     li.addEventListener('click', () => selectSuggestion(result.title));
     searchElement.appendChild(li);
   });
-
 }
-
 function selectSuggestion(selectedSuggestion){
-  document.getElementById('search').value = selectedSuggestion;
-  document.getElementById("searchResults").innerHTML = '';
+  document.getElementById('search').value=selectedSuggestion;
+  document.getElementById('searchResults').innerHTML='';
 }
-
 function debouncedSearch(event){
   const query=event.target.value;
   debounce(()=>{
@@ -40,5 +34,5 @@ function debouncedSearch(event){
     } else{
       document.getElementById("searchResults").innerHTML='';
     }
-  },1000);
+  },500);
 }

@@ -57,6 +57,10 @@ body {
   border-radius: 8px;
   display: flex;
   align-items: center;
+
+}
+.link{
+  text-decoration: none;
 }
 
 .Cart img,
@@ -105,6 +109,10 @@ body {
 
 .dropdown:hover .dropbtn {
   background-color: #2d65f2;
+  color: #fff;
+}
+.dropdown:hover .dropbtnimg{
+  filter: invert(99%) sepia(0%) saturate(7453%) hue-rotate(220deg) brightness(115%) contrast(97%);
 }
 
 .Seller{
@@ -163,6 +171,7 @@ body.modal-open {
   padding-left: 12px;
   font-size: 18px;
   background-color: var(--primary-color);
+  outline: var(--primary-color);
   /*dry: use a variable for color*/
 }
 
