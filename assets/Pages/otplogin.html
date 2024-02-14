@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
- 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, 
-                     initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OTP Input</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../CSS/optlogin.css" />
-</head>
- 
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div id="inputs" class="inputs">
-            <input class="input" type="text"
-                inputmode="numeric" maxlength="1" />
-            <input class="input" type="text"
-                inputmode="numeric" maxlength="1" />
-            <input class="input" type="text"
-                inputmode="numeric" maxlength="1" />
-            <input class="input" type="text"
-                inputmode="numeric" maxlength="1" />
-        </div>
+      <div class="inputfield">
+        <input type="number" maxlength="1" class="input" disabled />
+        <input type="number" maxlength="1" class="input" disabled />
+        <input type="number" maxlength="1" class="input" disabled />
+        <input type="number" maxlength="1" class="input" disabled />
+      </div>
+      <button class="hide" id="submit" onclick="validateOTP()">Submit</button>
     </div>
     <script src="../JS/otplogin.js"></script>
-</body>
- 
+  </body>
 </html>
