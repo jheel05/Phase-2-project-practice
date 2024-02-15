@@ -224,7 +224,6 @@ img {
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 #submitBtn:hover {
@@ -279,3 +278,34 @@ img {
     justify-content: center;
     margin: 5%;
 }
+
+.message {
+  display: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+#copyButton {
+  background-color: #cc5454; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* Hover effect for the copy description button */
+#copyButton:hover {
+  background-color: #45a049;}

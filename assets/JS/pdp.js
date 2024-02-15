@@ -106,14 +106,40 @@ function submitComment() {
     const days = Math.floor(hours / 24);
 
     if (days > 0) {
-      return `posted ${days} day${days > 1 ? 's' : ''} ago`;
+      return `Posted ${days} day${days > 1 ? 's' : ''} ago`;
     } else if (hours > 0) {
-      return `posted ${hours} hour${hours > 1 ? 's' : ''} ago`;
+      return `Posted ${hours} hour${hours > 1 ? 's' : ''} ago`;
     } else if (minutes > 0) {
-      return `posted ${minutes} minute${minutes > 1 ? 's' : ''} ago`;
+      return `Posted ${minutes} minute${minutes > 1 ? 's' : ''} ago`;
     } else {
-      return 'posted a few seconds ago';
+      return 'Posted a few seconds ago';
     }
   }
 
   window.onload = renderComments;
+
+
+  function copyProductDescription() {
+    var productDescription = document.getElementById("productDescription").textContent;
+
+    var tempInput = document.createElement("textarea");
+    tempInput.value = productDescription;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    tempInput.setSelectionRange(0, 99999); /* For mobile devices */
+
+    try {
+        var successful = document.execCommand('copy');
+        var messageElement = document.getElementById("message");
+        if (successful) {
+          alert("Product description copied to clipboard successfully!");
+        } else {
+            throw new Error("Failed to copy product description to clipboard");
+        }
+    } catch (err) {
+        var messageElement = document.getElementById("message");
+        alert("Failed to copy product description to clipboard");
+    }
+
+    document.body.removeChild(tempInput);
+}
