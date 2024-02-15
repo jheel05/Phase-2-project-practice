@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../CSS/productshowcase.css" />
+<link rel="stylesheet" href="../CSS/style.css" />
+<title>Product Showcase</title>
+<body>
+  <script src="../JS/productshowcase.js"></script>
+<header>
+  <div class="mainnav">
+    <header>
+      <nav class="topnav">
+        <div class="wrap">
+          <img
+            class="logo nav nav-title"
+            src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus_mobile-39120d.svg"
+            alt="Flipkart Logo"
+          />
+          <div class="nav">
+            <div class="search nav-title">
+              <i class="fa fa-search"></i>
+              <input
+                type="text"
+                placeholder="Search for Products, Brands and More"
+                id="search"
+                oninput="debouncedSearch(event)"
+              />
+            </div>
+            <ul id="searchResults"></ul>
+            <script src="assets/JS/searchbox.js"></script>
+          </div>
+         </div>
+      </nav>
+    </header>
+  </div>
+</header>
+  
+<div class = "card-wrapper">
+  <div class = "card">
+    <!-- card left -->
+    <div class = "product-imgs">
+      <div class = "img-display">
+        <div class = "img-showcase">
+          <img src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_1.jpg" alt = "shoe image">
+          <img src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_2.jpg" alt = "shoe image">
+          <img src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_3.jpg" alt = "shoe image">
+          <img src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_4.jpg" alt = "shoe image">
+        </div>
+      </div>
+      <div class = "img-select">
+        <div class = "img-item">
+          <a href = "#" data-id = "1">
+            <img src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_1.jpg" alt = "shoe image">
+          </a>
+        </div>
+        <div class = "img-item">
+          <a href = "#" data-id = "2">
+            <img src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_2.jpg" alt = "shoe image">
+          </a>
+        </div>
+        <div class = "img-item">
+          <a href = "#" data-id = "3">
+            <img src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_3.jpg" alt = "shoe image">
+          </a>
+        </div>
+        <div class = "img-item">
+          <a href = "#" data-id = "4">
+            <img src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_4.jpg" alt = "shoe image">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- card right -->
+    <div class = "product-content">
+      <h2 class = "product-title">Shoes Men</h2>
+      
+      <div class = "product-rating">
+        <i class = "fas fa-star"></i>
+        <i class = "fas fa-star"></i>
+        <i class = "fas fa-star"></i>
+        <i class = "fas fa-star"></i>
+        <i class = "fas fa-star-half-alt"></i>
+        <span>4.7(21)</span>
+      </div>
+
+      <div class = "product-price">
+        
+        <p class = "new-price">Price: <span>Rs. 19300.00</span></p>
+      </div>
+
+      <div class = "product-detail">
+        <h2>about this item: </h2>
+        <p>An iconic look that lasts. This pairs the classic design of the original with premium materials that will keep you going all day.</p>
+        <p>Run (don't walk) to your new favourite Borough. Made for the long haul, this "recrafted" legend uses a combination of durable materials on the upper and outsole to achieve a classic look made in a whole new way. A redesigned toe box and midfoot give your feet a little extra room so you can run, jump and play just a bit longer and a little bit harder.</p>
+        <ul>
+          <li>Color: <span>Black</span></li>
+          <li>Available: <span>in stock</span></li>
+          <li>Category: <span>Shoes</span></li>
+          <li>Shipping Area: <span>All over the world</span></li>
+          <li>Shipping Fee: <span>Free</span></li>
+        </ul>
+      </div>
+
+      <div class = "purchase-info">
+        <input type = "number" min = "0" value = "1">
+        <button type = "button" class = "btn">
+          Add to Cart <i class = "fas fa-shopping-cart"></i>
+        </button>
+        <button type = "button" class = "btn">Compare</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-wrap">
+  <h2>Leave a Comment or Review</h2>
+  <textarea id="comments" placeholder="Write your comment or review here..."></textarea>
+  <button id="submitBtn" onclick="submitComment()">Submit</button>
+  <ul id="commentList"></ul>
+</div>
+
+
+
+</body>
+</html>
