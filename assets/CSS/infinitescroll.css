@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    margin: 3%;
+    background-color: #e5e5e6;
+}
+.products-container {
+    width: 80%;
+    
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.sentinel {
+    height: 10px;
+    width: 100%;
+}
