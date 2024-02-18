@@ -287,6 +287,10 @@ body.modal-open {
 .scene > * {
   flex: 1 1 17%;
 }
+.head-prod{
+  text-decoration: none;
+  color: #000;
+}
 
 .scene {
   margin-top: 10px;
