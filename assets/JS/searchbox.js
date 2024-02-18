@@ -1,5 +1,3 @@
-
-
 let timer;
 function debounce(fn,delay){
   clearTimeout(timer);
