@@ -93,11 +93,11 @@ img {
   font-weight: 400;
 }
 .last-price span {
-  color: #f64749;
+  color: #4790f6;
   text-decoration: line-through;
 }
 .new-price span {
-  color: #256eff;
+  color: #dc6060;
 }
 .product-detail h2 {
   text-transform: capitalize;
