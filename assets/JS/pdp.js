@@ -130,14 +130,14 @@ function submitComment() {
 
     try {
         var successful = document.execCommand('copy');
-        var messageElement = document.getElementById("message");
+      
         if (successful) {
           alert("Product description copied to clipboard successfully!");
         } else {
             throw new Error("Failed to copy product description to clipboard");
         }
     } catch (err) {
-        var messageElement = document.getElementById("message");
+        
         alert("Failed to copy product description to clipboard");
     }
 
