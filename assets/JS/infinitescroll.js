@@ -6,7 +6,7 @@ async function fetchProducts() {
     try {
         const response = await fetch(`https://dummyjson.com/products?page=${page}&perPage=${perPage}`);
         if (!response.ok) {
-            throw new Error('Failed to fetch products from API');
+            window.location.href = "../Pages/error.html";
         }
         const data = await response.json();
         page++; 
@@ -19,8 +19,7 @@ async function fetchProducts() {
             console.log('Fetching products from local storage');
             return JSON.parse(storedData);
         } else {
-            alert('No data found');
-            return [];
+            window.location.href = "../Pages/error.html";
         }
     }
 }
@@ -40,7 +39,7 @@ function renderProducts(response) {
         productElement.classList.add('product');
         productElement.innerHTML = `
             <h2>${product.title}</h2>
-            <img src="${product.thumbnail}" alt="${product.title}">
+            <img src="${product.thumbnail}" alt="${product.title}" class="img">
             <p>${product.description}</p>
         `;
         productsContainer.appendChild(productElement);
