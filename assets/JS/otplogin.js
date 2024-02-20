@@ -66,7 +66,7 @@ window.addEventListener("keyup", (e) => {
 });
 
 const validateOTP = () => {
-	window.location.href = "/../../index.html";
+	window.location.href = "flipkart.html";
 };
 
 
