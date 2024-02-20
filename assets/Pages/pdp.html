@@ -10,6 +10,7 @@
       href="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png"
       type="image/png"
     />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Product Showcase</title>
 <body>
   <script src="../JS/pdp.js"></script>
@@ -34,7 +35,7 @@
               />
             </div>
             <ul id="searchResults"></ul>
-            <script src="assets/JS/searchbox.js"></script>
+            <script src="../JS/searchbox.js"></script>
           </div>
          </div>
       </nav>
@@ -82,11 +83,11 @@
       <h2 class = "product-title">Shoes Men</h2>
       
       <div class = "product-rating">
-        <i class = "fas fa-star"></i>
-        <i class = "fas fa-star"></i>
-        <i class = "fas fa-star"></i>
-        <i class = "fas fa-star"></i>
-        <i class = "fas fa-star-half-alt"></i>
+        <i class = "fa fa-star"></i>
+        <i class = "fa fa-star"></i>
+        <i class = "fa fa-star"></i>
+        <i class = "fa fa-star"></i>
+        <i class = "fa fa-star-half-full"></i>
         <span>4.7(21)</span>
       </div>
 
@@ -97,8 +98,7 @@
 
       <div class = "product-detail">
         <h2>about this item: </h2>
-        <button id="copyButton" onclick="copyProductDescription()">Copy Description</button>
-        <p id="productDescription">An iconic look that lasts. This pairs the classic design of the original with premium materials that will keep you going all day.
+        <p>An iconic look that lasts. This pairs the classic design of the original with premium materials that will keep you going all day.
         <br><br>Run (don't walk) to your new favourite Borough. Made for the long haul, this "recrafted" legend uses a combination of durable materials on the upper and outsole to achieve a classic look made in a whole new way. A redesigned toe box and midfoot give your feet a little extra room so you can run, jump and play just a bit longer and a little bit harder.</p>
         <ul> Features:
           <li>Color: <span>Black</span></li>
@@ -107,14 +107,20 @@
           <li>Shipping Area: <span>All over the world</span></li>
           <li>Shipping Fee: <span>Free</span></li>
         </ul>
+        <ul> Offers:
+          <li><span>Use Code</span> <strong id="code">BCON970</strong> <span>to get extra 25% off.</span></li>
+        </ul>
+        <button id="copyButton" onclick="copyProductDescription()">Copy the Code</button>
       </div>
 
       <div class = "purchase-info">
         <input type = "number" min = "0" value = "1">
         <button type = "button" class = "btn">
-          Add to Cart <i class = "fas fa-shopping-cart"></i>
+          Add to Cart <i class = "fa fa-shopping-cart"></i>
         </button>
-        <button type = "button" class = "btn">Compare</button>
+        <button type = "button" class = "btn">
+          Compare <i class = "fa fa-filter"></i>
+        </button>
       </div>
     </div>
   </div>

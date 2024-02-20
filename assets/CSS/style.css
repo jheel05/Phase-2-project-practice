@@ -210,6 +210,7 @@ body.modal-open {
   overflow-y: auto;
   z-index: 1;
 }
+
 #searchResults li {
   padding: 10px;
   cursor: pointer;
@@ -349,9 +350,13 @@ body.modal-open {
 
 li {
   list-style: none;
+  text-decoration: none;
+  
+ 
 }
 #footer {
   font-size: 15px;
+  text-decoration: none;
   background-color: black;
   color: white;
   display: flex;

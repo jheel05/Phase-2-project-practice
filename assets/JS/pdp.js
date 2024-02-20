@@ -1,24 +1,4 @@
-const imgs = document.querySelectorAll('.img-select a');
-const imgBtns = [...imgs];
-let imgId = 1;
 
-imgBtns.forEach((imgItem) => {
-    imgItem.addEventListener('click', (event) => {
-        event.preventDefault();
-        imgId = imgItem.dataset.id;
-        slideImage();
-    });
-});
-
-function slideImage(){
-    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
-
-    document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
-}
-
-window.addEventListener('resize', slideImage);
-
-  //timestamps code
   function submitComment() {
     const commentsTextarea = document.getElementById('comments');
     const commentText = commentsTextarea.value.trim();
@@ -93,26 +73,14 @@ window.addEventListener('resize', slideImage);
 
 
   function copyProductDescription() {
-    var productDescription = document.getElementById("productDescription").textContent;
+    var code = document.getElementById("code").textContent;
 
-    var tempInput = document.createElement("textarea");
-    tempInput.value = productDescription;
-    document.body.appendChild(tempInput);
-    tempInput.select();
-    tempInput.setSelectionRange(0, 99999); /* For mobile devices */
-
-    try {
-        var successful = document.execCommand('copy');
-      
-        if (successful) {
-          alert("Product description copied to clipboard successfully!");
-        } else {
-            throw new Error("Failed to copy product description to clipboard");
-        }
-    } catch (err) {
-        
-        alert("Failed to copy product description to clipboard");
-    }
-
-    document.body.removeChild(tempInput);
+    navigator.clipboard.writeText(code)
+        .then(() => {
+            alert("Code copied to clipboard successfully!");
+        })
+        .catch((error) => {
+            console.error("Failed to copy code to clipboard:", error);
+            alert("Failed to copy copy to clipboard");
+        });
 }
