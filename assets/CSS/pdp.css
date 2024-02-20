@@ -1,5 +1,95 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 
+.mainnav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.topnav {
+  align-items: center;
+  background-color: #ffffff;
+  height: 10%;
+}
+
+.wrap {
+  padding-top: 1%;
+}
+
+.logo {
+  display: block;
+  justify-content: center;
+  width: 150px;
+}
+
+.nav {
+  list-style: none;
+  display: inline-block;
+  padding: 0 1%;
+  align-items: center;
+  vertical-align: middle;
+  position: relative;
+}
+
+.nav-title {
+  font-size: 1.5em;
+}
+.search input[type="text"] {
+  border: none;
+  width: 500px;
+  height: 20px;
+  padding: 1.5%;
+  padding-left: 12px;
+  font-size: 18px;
+  outline: #ffff;
+}
+
+.search {
+  margin-bottom: 10px;
+  align-items: center;
+  width: 700px;
+  background-color: var(--primary-color);
+  padding: 4px;
+  border-radius: 10px;
+}
+
+.search button {
+  background-color: var(--primary-color);
+  color: #3f3c3c;
+  padding: 8px;
+  align-items: center;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#searchResults {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+#searchResults li {
+  padding: 10px;
+  cursor: pointer;
+}
+#searchResults li:hover {
+  background-color: #f5f5f5;
+}
+
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -8,10 +98,14 @@
 }
 body {
   line-height: 1.5;
+  background-color: #ffffff !important;
 }
 .card-wrapper {
   max-width: 1100px;
   margin: 0 auto;
+}
+.card{
+  margin-top: 50px;
 }
 img {
   width: 100%;
@@ -97,7 +191,7 @@ img {
   text-decoration: line-through;
 }
 .new-price span {
-  color: #dc6060;
+  color: #d43030;
 }
 .product-detail h2 {
   text-transform: capitalize;
@@ -151,7 +245,7 @@ img {
   background: #256eff;
 }
 .purchase-info .btn:last-of-type {
-  background: #f64749;
+  background: #dc3545;
 }
 .purchase-info .btn:hover {
   opacity: 0.9;
@@ -247,7 +341,7 @@ img {
   overflow: wrap;
   overflow-wrap: normal;
   box-sizing: border-box;
-  max-height: 150px; /* Set maximum height for each comment */
+  max-height: 150px; 
   overflow-y: auto;
 }
 
@@ -270,13 +364,12 @@ img {
 }
 .comment-wrap{
     font-family: Arial, sans-serif;
-   
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 5%;
+    margin: 7%;
 }
 
 .message {
@@ -306,6 +399,6 @@ img {
   cursor: pointer;
   border-radius: 5px;
 }
-/* Hover effect for the copy description button */
+
 #copyButton:hover {
   background-color: #45a049;}
