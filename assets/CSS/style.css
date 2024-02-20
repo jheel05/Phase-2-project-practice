@@ -351,13 +351,24 @@ body.modal-open {
 li {
   list-style: none;
   text-decoration: none;
+}
+
+footer li{
+  text-align: left;
   
- 
+}
+footer li a{
+  text-decoration: none; 
+  color: inherit; 
+}
+footer li a:hover{
+  text-decoration:underline #ffffff; 
+  color: inherit; 
 }
 #footer {
-  font-size: 15px;
+  font-size: 12px;
   text-decoration: none;
-  background-color: black;
+  background-color: rgb(28, 29, 30);
   color: white;
   display: flex;
   justify-content: space-around;
@@ -367,8 +378,27 @@ li {
 
 .heading {
   color: rgb(144, 143, 143);
-  font-size: 17px;
+  font-size: 13px;
   padding-bottom: 7px;
+}
+.mid{
+  border-right: hsl(0, 0%, 47%) solid 1px;
+  padding-right: 32px;
+}
+.bottom-footer{
+  border-top: hsl(0, 0%, 47%) solid 1px;
+  background-color: rgb(28, 29, 30);
+  display: flex;
+  padding: 25px 0;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #ffff;
+  font-size: 12px;
+}
+.bottom-footer a{
+  text-decoration: none; 
+  color: inherit; 
 }
 
 @media screen and (max-width: 1500px) {
@@ -441,15 +471,8 @@ li {
     width: calc(50% - 20px);
     margin: 10px;
   }
-
-  #footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  #footer div {
-    margin-bottom: 10px;
+  footer{
+    display: none;
   }
 
   .heading {
@@ -488,11 +511,4 @@ li {
     height: 160px;
   }
 
-  #footer div {
-    margin-bottom: 5px;
-  }
-
-  .heading {
-    margin-top: 5px;
-  }
 }
