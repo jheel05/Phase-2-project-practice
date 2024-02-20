@@ -312,7 +312,7 @@ body.modal-open {
   cursor: pointer;
   transition: 1s ease-in-out;
   transform-style: preserve-3d;
-  background-color: #303235a9;
+  background-color: #313234a9;
 }
 
 .scene .card:hover {
