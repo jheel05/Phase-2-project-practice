@@ -351,6 +351,7 @@ li {
   list-style: none;
 }
 #footer {
+  font-size: 15px;
   background-color: black;
   color: white;
   display: flex;
@@ -361,7 +362,7 @@ li {
 
 .heading {
   color: rgb(144, 143, 143);
-  font-size: 20px;
+  font-size: 17px;
   padding-bottom: 7px;
 }
 
