@@ -48,7 +48,7 @@ function renderProducts(response) {
 }
 
 
-async function handleIntersection(entries, observer) {
+async function handleIntersection(entries) {
     console.log("Intersection observed");
     if (entries[0].isIntersecting) {
         const products = await fetchProducts();
