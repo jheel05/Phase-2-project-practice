@@ -10,7 +10,7 @@ function openModal() {
 function closeModal() {
   modal.style.display = 'none';
   modalBackground.style.display = 'none';
-  document.body.style.overflow = 'auto';  //hidden or auto??
+  document.body.style.overflow = 'auto';  
 }
 
 modalBackground.addEventListener('click', function(event) {
