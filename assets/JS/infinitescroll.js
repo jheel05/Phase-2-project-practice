@@ -2,21 +2,29 @@ let page = 1;
 const perPage = 20; 
 const productsContainer = document.getElementById('products-container');
 
-
 async function fetchProducts() {
     try {
         const response = await fetch(`https://dummyjson.com/products?page=${page}&perPage=${perPage}`);
         if (!response.ok) {
-            throw new Error('Failed to fetch products');
+            throw new Error('Failed to fetch products from API');
         }
         const data = await response.json();
         page++; 
+        localStorage.setItem('products', JSON.stringify(data)); 
         return data;
     } catch (error) {
-        console.error(error);
-        return []; 
+        console.error('Error fetching products:', error);
+        const storedData = localStorage.getItem('products');
+        if (storedData) {
+            console.log('Fetching products from local storage');
+            return JSON.parse(storedData);
+        } else {
+            alert('No data found');
+            return [];
+        }
     }
 }
+
 
 
 
