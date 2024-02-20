@@ -18,33 +18,6 @@ function slideImage(){
 
 window.addEventListener('resize', slideImage);
 
-function submitComment() {
-    const commentInput = document.getElementById('comments').value.trim();
-    if (commentInput !== '') {
-      const timestamp = new Date().toLocaleString();
-      const comment = { text: commentInput, timestamp: timestamp };
-      let comments = JSON.parse(localStorage.getItem('comments')) || [];
-      comments.push(comment);
-      localStorage.setItem('comments', JSON.stringify(comments));
-      displayComments();
-      document.getElementById('comments').value = '';
-    }
-  }
-
-  function displayComments() {
-    const commentList = document.getElementById('commentList');
-    commentList.innerHTML = '';
-    const comments = JSON.parse(localStorage.getItem('comments')) || [];
-    comments.forEach(comment => {
-      const commentItem = document.createElement('li');
-      commentItem.className = 'comment';
-      commentItem.textContent = `${comment.text} - ${comment.timestamp}`;
-      commentList.appendChild(commentItem);
-    });
-  }
-
-  window.onload = displayComments;
-
   //timestamps code
   function submitComment() {
     const commentsTextarea = document.getElementById('comments');

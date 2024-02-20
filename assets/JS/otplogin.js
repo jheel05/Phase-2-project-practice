@@ -16,7 +16,6 @@ const updateInputConfig = (element, disabledStatus) => {
 
 input.forEach((element) => {
   element.addEventListener("keydown", (e) => {
-    // Prevent typing anything other than numbers
     if (!/[0-9]/.test(e.key)) {
       e.preventDefault();
     }
