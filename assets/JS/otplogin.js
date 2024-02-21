@@ -4,7 +4,6 @@ const submitButton = document.getElementById("submit");
 let inputCount = 0,
   finalInput = "";
 
-
 const updateInputConfig = (element, disabledStatus) => {
   element.disabled = disabledStatus;
   if (!disabledStatus) {
