@@ -72,7 +72,7 @@
   window.onload = renderComments;
 
 
-  function copyProductDescription() {
+  function copyCode() {
     var code = document.getElementById("code").textContent;
 
     navigator.clipboard.writeText(code)
