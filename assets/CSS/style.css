@@ -162,6 +162,11 @@ body.modal-open {
   overflow: hidden;
 }
 
+.search i{
+  padding: 1.8px;
+  margin-left: 8px;
+  text-decoration: none;
+}
 
 .search input[type="text"] {
   border: none;
@@ -172,7 +177,7 @@ body.modal-open {
   font-size: 18px;
   background-color: var(--primary-color);
   outline: var(--primary-color);
-  /*dry: use a variable for color*/
+
 }
 
 .search {

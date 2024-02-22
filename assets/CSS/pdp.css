@@ -191,7 +191,7 @@ img {
   text-decoration: line-through;
 }
 .new-price span {
-  color: #d43030;
+  color: #0a1807;
 }
 .product-detail h2 {
   text-transform: capitalize;
@@ -210,7 +210,7 @@ img {
 .product-detail ul li {
   margin: 0;
   list-style: none;
-  background: url(https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/checked.png)
+  background: url(https://rukminim2.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90)
     left center no-repeat;
   background-size: 18px;
   padding-left: 1.7rem;
@@ -245,7 +245,7 @@ img {
   background: #256eff;
 }
 .purchase-info .btn:last-of-type {
-  background: #dc3545;
+  background: #f57171;
 }
 .purchase-info .btn:hover {
   opacity: 0.9;
@@ -349,13 +349,16 @@ img {
   position: absolute;
   top: 5px;
   right: 5px;
-  background-color: #dc3545;
+  background-color: #ff9b9b;
   color: #fff;
   border: none;
   border-radius: 50%;
   width: 20px;
   height: 20px;
   cursor: pointer;
+}
+.deleteBtn:hover{
+  background-color: rgb(232, 48, 48);
 }
 .timestamp {
   font-size: 12px;
@@ -379,7 +382,7 @@ img {
 }
 .success {
   background-color: #d4edda;
-  color: #155724;
+  color: #1a7c31;
 }
 .error {
   background-color: #f8d7da;
@@ -387,7 +390,7 @@ img {
 }
 
 #copyButton {
-  background-color: #cc5454; /* Green */
+  background-color: #f57171; 
   border: none;
   color: white;
   padding: 10px 20px;

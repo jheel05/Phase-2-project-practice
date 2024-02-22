@@ -68,6 +68,11 @@ const validateOTP = () => {
 	window.location.href = "flipkart.html";
 };
 
+document.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    submitButton.click();
+  }
+});
 
 const startInput = () => {
   inputCount = 0;
