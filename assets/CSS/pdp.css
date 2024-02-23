@@ -31,6 +31,11 @@
   vertical-align: middle;
   position: relative;
 }
+.search i{
+  padding: 1.8px;
+  margin-left: 8px;
+  text-decoration: none;
+}
 
 .nav-title {
   font-size: 1.5em;
@@ -42,7 +47,8 @@
   padding: 1.5%;
   padding-left: 12px;
   font-size: 18px;
-  outline: #ffff;
+  background-color:#ecf1f7  ;
+  outline: #ecf1f7 ;
 }
 
 .search {
@@ -52,6 +58,8 @@
   background-color: var(--primary-color);
   padding: 4px;
   border-radius: 10px;
+  background-color:#ecf1f7 ;
+  outline: #ecf1f7 ;
 }
 
 .search button {
@@ -89,7 +97,6 @@
   background-color: #f5f5f5;
 }
 
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -98,13 +105,13 @@
 }
 body {
   line-height: 1.5;
-  background-color: #ffffff !important;
+  background-color: #f7f7f7 !important;
 }
 .card-wrapper {
   max-width: 1100px;
   margin: 0 auto;
 }
-.card{
+.card {
   margin-top: 50px;
 }
 img {
@@ -341,7 +348,7 @@ img {
   overflow: wrap;
   overflow-wrap: normal;
   box-sizing: border-box;
-  max-height: 150px; 
+  max-height: 150px;
   overflow-y: auto;
 }
 
@@ -357,7 +364,7 @@ img {
   height: 20px;
   cursor: pointer;
 }
-.deleteBtn:hover{
+.deleteBtn:hover {
   background-color: rgb(232, 48, 48);
 }
 .timestamp {
@@ -365,14 +372,14 @@ img {
   color: #999;
   margin-top: 5px;
 }
-.comment-wrap{
-    font-family: Arial, sans-serif;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 7%;
+.comment-wrap {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 7%;
 }
 
 .message {
@@ -390,7 +397,7 @@ img {
 }
 
 #copyButton {
-  background-color: #f57171; 
+  background-color: #f57171;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -404,4 +411,60 @@ img {
 }
 
 #copyButton:hover {
-  background-color: #45a049;}
+  background-color: #45a049;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+footer li {
+  text-align: left;
+}
+footer li a {
+  text-decoration: none;
+  color: inherit;
+}
+footer li a:hover {
+  text-decoration: underline #ffffff;
+  color: inherit;
+}
+#footer {
+  font-size: 12px;
+  text-decoration: none;
+  background-color: rgb(28, 29, 30);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 18px;
+  padding-top: 18px;
+}
+
+.heading {
+  color: rgb(144, 143, 143);
+  font-size: 13px;
+  padding-bottom: 7px;
+}
+.mid {
+  border-right: hsl(0, 0%, 47%) solid 1px;
+  padding-right: 32px;
+}
+#bottom-footer {
+  border-top: hsl(0, 0%, 47%) solid 1px;
+  background-color: rgb(28, 29, 30);
+  display: flex;
+  padding: 25px 0;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #ffff;
+  font-size: 12px;
+}
+#bottom-footer a {
+  text-decoration: none;
+  color: inherit;
+}
+#bottom-footer .img-cards{
+width: 450px;
+}
